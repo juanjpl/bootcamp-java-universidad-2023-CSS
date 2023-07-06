@@ -1,64 +1,105 @@
-*{
-    margin:0;
-    background-color: #edf7ff;
-    font-family: 'MuseoModerno', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+/*Defino las variables base*/
+
+:root {
+
+    --primary-color: #04146c;
+    --secundary-color: #edf7ff;
+
+    --font-primary: 'Source Sans 3', sans-serif;
+
+    --size-18pt: 24px;
+    --size-20pt: 27px;
+    --size-29pt: 39px;
+    --size-66pt: 88px;
+
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --font-weight-black: 900;
+
 }
 
-body{
-    border-top:1.2rem solid  #8a9af1;
-   
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+
 }
 
-header{
-    margin:8rem 0rem ;
+.marquesina,
+header,
+.texto-central,
+footer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: var(--font-primary);
 }
 
-.contenedor-uno{
-    margin: 0rem 0rem 0rem 8rem;
-    width: 50vw;
+.marquesina {
+    background-color: var(--primary-color);
 }
 
-.titulo-uno{
-    font-size: 118px;
-    font-weight: 700;
-    color: #0a2ff1;
- 
-    
+.marquesina>h2 {
+    width: 32vw;
+    font-size: var(--size-29pt);
+    font-weight: var(--font-weight-regular);
+    color: #fff;
+    margin: 0 auto;
 }
 
-.titulo-dos{
-    font-size:52px;
-    font-family:  'Asap', sans-serif;
-    font-weight: 400;
-    line-height: 0.5rem;
-    color: #0a2ff1;
-}
-.texto-central{
-    font-family:  'Asap', sans-serif;
-    font-size:34px;
-    font-weight: 400;
-    color:#04146c;
-    margin:5rem 0rem;
-    line-height: 3rem;
+header {
+    height: 40vh;
 }
 
-.titulo-tres{
-    font-size:48px;
-    font-weight: 700;
-    color: #0a2ff1;
-    line-height: 8rem;
+header>h1 {
+    width: 32vw;
+    font-size: var(--size-66pt);
+    font-weight: var(--font-weight-black);
+    color: var(--primary-color);
+    margin: 0 auto;
 }
 
-.lista{
-    font-family:  'Asap', sans-serif;
-    font-weight: 700;
-    font-size:34px;
-    color:#04146c;
-    margin:6rem 0rem;
+.texto-central {
+    height: 5vh;
 }
 
-.titulo-footer{
-    font-size: 199px;
-    font-weight: 700;
-    color: #8a9af1;
+.texto-central>p {
+    width: 32vw;
+    font-size: var(--size-20pt);
+    font-weight: var(--font-weight-regular);
+    color: var(--primary-color);
+    margin: 0 auto;
+}
+
+
+.imagen-central {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0rem;
+}
+
+
+
+.imagen-central>img {
+    width: 32vw;
+    border:1px solid #04146c;
+}
+
+footer {
+    background-color: var(--secundary-color);
+}
+
+footer>p {
+    width: 32vw;
+    font-size: var(--size-18pt);
+    font-weight: var(--font-weight-regular);
+    color: var(--primary-color);
+    margin: 0 auto;
+
 }
