@@ -1,64 +1,72 @@
-*{
-    margin:0;
-    background-color: #edf7ff;
-    font-family: 'MuseoModerno', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Defino las variables base*/
+
+:root {
+
+    --primary-color: #0a2ff1;
+    --secundary-color: #3ffff3;
+    --tertiary-color: #8a9af1;
+
+    --font-primary: 'Poppins', sans-serif;
+
+    --size-59pt: 79px;
+    --size-23pt: 31px;
+
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
 }
 
-body{
-    border-top:1.2rem solid  #8a9af1;
-   
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
 
-header{
-    margin:8rem 0rem ;
+
+
+
+.titulo-uno {
+    width: 40vw;
+    text-align: left;
+    margin:2rem auto 4rem auto;
 }
 
-.contenedor-uno{
-    margin: 0rem 0rem 0rem 8rem;
-    width: 50vw;
+.titulo-uno>h1,
+.titulo-uno>h2{
+    font-size: var(--size-59pt);
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-color);
 }
 
-.titulo-uno{
-    font-size: 118px;
-    font-weight: 700;
-    color: #0a2ff1;
- 
-    
+.titulo-uno>h2>span {
+    background-color: var(--secundary-color);
 }
 
-.titulo-dos{
-    font-size:52px;
-    font-family:  'Asap', sans-serif;
-    font-weight: 400;
-    line-height: 0.5rem;
-    color: #0a2ff1;
-}
-.texto-central{
-    font-family:  'Asap', sans-serif;
-    font-size:34px;
-    font-weight: 400;
-    color:#04146c;
-    margin:5rem 0rem;
-    line-height: 3rem;
+
+.texto-central {
+    width: 40vw;
+    margin:6rem auto;
 }
 
-.titulo-tres{
-    font-size:48px;
-    font-weight: 700;
-    color: #0a2ff1;
-    line-height: 8rem;
+.texto-central>p{
+    font-family: var(--font-primary);
+    font-size: var(--size-23pt);
+    font-weight: var(--font-weight-medium);
+    color:var(--primary-color);
 }
 
-.lista{
-    font-family:  'Asap', sans-serif;
-    font-weight: 700;
-    font-size:34px;
-    color:#04146c;
-    margin:6rem 0rem;
+.imagen-central{
+    width: 21vw;
+    height: 100%;
+    margin:3rem auto 0rem 29vw;
+    background-image: url(../assets/fondo.JPG);  
 }
 
-.titulo-footer{
-    font-size: 199px;
-    font-weight: 700;
-    color: #8a9af1;
+
+.imagen-central>img{
+  width: 20vw;
 }
