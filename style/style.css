@@ -1,64 +1,99 @@
-*{
-    margin:0;
-    background-color: #edf7ff;
-    font-family: 'MuseoModerno', cursive;
-}
 
-body{
-    border-top:1.2rem solid  #8a9af1;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:#fff;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
    
 }
 
-header{
-    margin:8rem 0rem ;
-}
 
-.contenedor-uno{
-    margin: 0rem 0rem 0rem 8rem;
-    width: 50vw;
-}
 
 .titulo-uno{
-    font-size: 118px;
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        background-color: #000;
+}
+
+.titulo-uno>h1{
+  
+    font-size: 67px;
     font-weight: 700;
-    color: #0a2ff1;
- 
-    
 }
 
 .titulo-dos{
-    font-size:52px;
-    font-family:  'Asap', sans-serif;
-    font-weight: 400;
-    line-height: 0.5rem;
-    color: #0a2ff1;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
 }
-.texto-central{
-    font-family:  'Asap', sans-serif;
-    font-size:34px;
-    font-weight: 400;
-    color:#04146c;
-    margin:5rem 0rem;
-    line-height: 3rem;
+
+.titulo-dos>h2{
+
+    font-size:198px;
+    font-weight: 700;
+    color: #000;
 }
 
 .titulo-tres{
-    font-size:48px;
-    font-weight: 700;
-    color: #0a2ff1;
-    line-height: 8rem;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+  
 }
 
-.lista{
-    font-family:  'Asap', sans-serif;
+.titulo-tres>h3{
+ 
+    font-size:217px;
     font-weight: 700;
-    font-size:34px;
-    color:#04146c;
-    margin:6rem 0rem;
+   
+}
+
+
+.texto-central{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.texto-central>p{
+    font-size:48px;
+    font-weight: 400;
+    background-color: #fff;
+    color: #000;
+}
+
+.texto-central>p>strong{
+    font-size:60px;
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+.titulo-footer{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+
 }
 
 .titulo-footer{
-    font-size: 199px;
+    font-size: 59px;
     font-weight: 700;
-    color: #8a9af1;
+ 
 }
