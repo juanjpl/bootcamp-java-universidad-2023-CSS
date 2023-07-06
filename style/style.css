@@ -1,64 +1,117 @@
-*{
-    margin:0;
-    background-color: #edf7ff;
-    font-family: 'MuseoModerno', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+
 }
 
-body{
-    border-top:1.2rem solid  #8a9af1;
-   
+
+
+.titulo-uno {
+    border-top: 3rem solid #0a2ff1;
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items:start;
+    background-color: #fff;
+
+
+
 }
 
-header{
-    margin:8rem 0rem ;
-}
 
-.contenedor-uno{
-    margin: 0rem 0rem 0rem 8rem;
-    width: 50vw;
-}
+.titulo-uno>div>h1 {
 
-.titulo-uno{
-    font-size: 118px;
-    font-weight: 700;
+
+    font-size: 67px;
+    font-weight: 900;
     color: #0a2ff1;
- 
-    
+
 }
 
-.titulo-dos{
-    font-size:52px;
-    font-family:  'Asap', sans-serif;
-    font-weight: 400;
-    line-height: 0.5rem;
+.titulo-dos {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.titulo-dos>h2 {
+
+    font-size: 198px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.titulo-tres {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.titulo-tres>h3 {
+
+    font-size: 217px;
+    font-weight: 900;
+    color: #000;
+
+}
+
+
+.texto-central {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.texto-central>p {
+    font-size: 48px;
+    font-weight: 600;
+    background-color: #fff;
     color: #0a2ff1;
 }
-.texto-central{
-    font-family:  'Asap', sans-serif;
-    font-size:34px;
-    font-weight: 400;
-    color:#04146c;
-    margin:5rem 0rem;
-    line-height: 3rem;
-}
 
-.titulo-tres{
-    font-size:48px;
-    font-weight: 700;
+.texto-central>p>span {
+    font-size: 48px;
+    font-weight: 900;
+    background-color: #fff;
     color: #0a2ff1;
-    line-height: 8rem;
 }
 
-.lista{
-    font-family:  'Asap', sans-serif;
-    font-weight: 700;
-    font-size:34px;
-    color:#04146c;
-    margin:6rem 0rem;
+.texto-central>p>strong {
+    font-size: 60px;
+    font-weight: 900;
+    background-color: #000;
+    color: #fff;
 }
 
-.titulo-footer{
-    font-size: 199px;
-    font-weight: 700;
-    color: #8a9af1;
+
+
+.titulo-footer {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    border-bottom:6rem solid #0a2ff1;
+
+}
+
+.titulo-footer>h4 {
+    font-size: 59px;
+    font-weight: 600;
+    color: #0a2ff1;
+
 }
